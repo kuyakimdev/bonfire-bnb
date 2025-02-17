@@ -4,8 +4,9 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'HomeAway Draft',
-  description: 'Feel at home, away from home.',
+  title: 'Bonfire-bnb',
+  description:
+    'A sanctuary for weary travelers, where the flames of respite burn eternal.',
 };
 
 export default function RootLayout({
@@ -14,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <main className='container py-10'>{children}</main>
+        <main className="container py-10">{children}</main>
       </body>
     </html>
   );
